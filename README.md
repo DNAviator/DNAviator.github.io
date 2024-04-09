@@ -1,2 +1,2 @@
-# DNAviator.github.io
-Web portfolio
+# portfolio-template
+A simple HTML/CSS + JavaScript template for a making a DEV portfolio/online resume.
