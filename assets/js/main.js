@@ -22,7 +22,7 @@ jQuery(document).ready(function($) {
 		$('.level-label').tooltip();
 
 
-		let gitHubUsername = 'CSC340-sp24';
+		let gitHubUsername = 'DNAviator';
 
 		// Run GitHub API function, passing in the GitHub username
 		requestUserRepos(gitHubUsername)

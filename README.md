@@ -1,2 +1,2 @@
-# portfolio-template
-A simple HTML/CSS + JavaScript template for a making a DEV portfolio/online resume.
+# Portfolio
+Howdy! This is the repository for my portfolio page found at DNAviator.github.io
