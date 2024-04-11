@@ -550,8 +550,9 @@ iframe {
     text-align: center;
   }
   .header .profile-image {
-    float: none !important;
-    margin: 0 auto;
+    /* float: none !important; */
+    /* margin: 0 auto; */
+    max-width: 25%;
   }
   .header .profile-content {
     float: none !important;
