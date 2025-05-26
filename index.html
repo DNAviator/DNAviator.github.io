@@ -1,392 +1,528 @@
 <!DOCTYPE html>
-<!--[if IE 8]>
-<html lang="en" class="ie8">
-	<![endif]-->
-<!--[if IE 9]>
-	<html lang="en" class="ie9">
-		<![endif]-->
-<!--[if !IE]>
-		<!-->
-<html lang="en">
-<!--
-			<![endif]-->
+<html lang="en" data-bs-theme="light">
 
 <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Joseph Cramer</title>
-  <!-- Meta -->
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="shortcut icon" href="favicon.ico">
-  <link href='http://fonts.googleapis.com/css?family=Lato:300,400,300italic,400italic' rel='stylesheet' type='text/css'>
-  <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
-  <!-- Global CSS -->
-  <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">
-  <!-- Plugins CSS -->
-  <link rel="stylesheet" href="assets/plugins/font-awesome/css/font-awesome.css">
-  <!-- Theme CSS -->
-  <link id="theme-style" rel="stylesheet" href="assets/css/styles.css">
+
+  <!-- Favicon -->
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <!-- Bootstrap Icons (for skill section) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet" />
+
+  <!-- AOS animations -->
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="assets\css\styles.css" />
 </head>
 
 <body>
-  <!-- ******HEADER****** -->
-  <header class="header">
+  <!-- Dark‑/Light‑mode toggle -->
+  <button id="toggle-theme" class="btn btn-sm btn-outline-secondary position-absolute top-0 end-0 m-3"
+    title="Toggle theme">
+    <span id="theme-icon">🌙</span>
+  </button>
+
+  <!-- ================= HEADER ================= -->
+  <header class="section py-5">
     <div class="container">
-      <img class="profile-image img-responsive pull-left" src="assets/images/portfolio_photo.jpg" alt="Avatar" />
-      <div class="profile-content pull-left">
-        <h1 class="name">Joseph Cramer</h1>
-        <h2 class="desc">Future Bioinformatics Researcher</h2>
-        <ul class="social list-inline">
-          <li class="list-inline-item">
-            <a href="http://www.linkedin.com/in/joseph-cramer-757659184">
-              <i class="fa fa-linkedin"></i>
-            </a>
-          </li>
-          <li class="list-inline-item">
-            <a href="https://github.com/DNAviator">
-              <i class="fa fa-github-alt"></i>
-            </a>
-          </li>
-          <!-- <li class="list-inline-item">
-            <a href="http://www.stackoverflow.com">
-              <i class="fa fa-stack-overflow"></i>
-            </a>
-          </li> -->
-          <!-- <li class="list-inline-item last-item">
-            <a href="http://www.codepen.io">
-              <i class="fa fa-codepen"></i>
-            </a>
-          </li> -->
-        </ul>
+      <div class="row align-items-center">
+        <div class="col-lg-8 text-lg-start text-center" data-aos="fade-right">
+          <h1 class="fw-bold">Joseph Cramer</h1>
+          <p class="lead mb-3">Incoming Vanderbilt QCB PhD Student</p>
+          <div class="d-flex justify-content-lg-start justify-content-center flex-wrap gap-2">
+            <a class="btn btn-primary btn-sm" href="https://github.com/DNAviator" target="_blank">GitHub</a>
+            <a class="btn btn-primary btn-sm" href="https://linkedin.com/in/jmcramer" target="_blank">LinkedIn</a>
+            <a class="btn btn-primary btn-sm" href="assets\files\Resume_2025.pdf" target="_blank">Resume</a>
+          </div>
+        </div>
+        <div class="col-lg-4 text-center mt-4 mt-lg-0" data-aos="fade-left">
+          <img src="assets\images\portfolio_photo.JPG" alt="Profile photo"
+            class="rounded-circle img-thumbnail profile-img img-fluid" />
+        </div>
       </div>
-      <div class="col-12 col-md-auto pull-right">
-        <a class="btn btn-cta-primary" href="assets/files/resume-2024.pdf" target="_blank"><i
-            class="fa fa-paper-plane"></i>
-          Get My Resume (PDF)</a>
-      </div><!--//col-->
     </div>
-    <!--//container-->
   </header>
-  <!--//header-->
-  <div class="container sections-wrapper">
-    <div class="row">
-      <div class="primary col-md-8 col-sm-12 col-xs-12">
-        <section class="about section">
-          <div class="section-inner">
-            <h2 class="heading">About Me</h2>
-            <div class="content">
-              <p> Howdy! I am a computer science and biochemistry student at UNCG.
-                I have broad experience within the two fields with research on the biochemistry side and development
-                experience on the computer science end. My goal is to leverage my wide area of expertise to develop
-                innovative
-                solutions to novel bioinformatics problems. I am continuing my education for now so check back in for
-                updates! </p>
-            </div>
-            <!--//content-->
-          </div>
-          <!--//section-inner-->
-        </section>
-        <!--//section-->
-        <section class="experience section">
-          <div class="section-inner">
-            <h2 class="heading">Work Experience</h2>
-            <div class="content">
-              <div class="item" name="Job1">
-                <h3 class="title">AI Intern<span class="place">
-                    <a href="#">TalentTelligent</a>
-                  </span>
-                  <span class="year">(2023-2024)</span>
-                </h3>
-                <p> As an AI intern I work closely with the CTO and upper management to prepare data for inclusion in an
-                  AI-enabled database. I am responsible for tagging data, providing support in assessing AI
-                  functionalities, and providing clear documentation of changes and progress to ensure a smooth
-                  transition of intellectual property into the embedded database. </p>
-              </div>
-              <!--//item-->
-              <div class="item" name="Job2">
-                <h3 class="title">Tutor<span class="place">
-                    <a href="#">UNCG CS Department</a>
-                  </span>
-                  <span class="year">(2022-2023)</span>
-                </h3>
-                <p>As a computer science tutor I worked with the CS department to provide personalized support to
-                  students in
-                  their coding efforts. I was responsible for manning the CS lab, answering any questions, assisting
-                  with debugging code, and teaching problem solving to the students in the lab.
-                </p>
-              </div>
-            </div>
-            <!--//content-->
-          </div>
-          <!--//section-inner-->
-        </section>
-        <!--//section-->
-        <section class="latest section">
-          <div class="section-inner" id="projects" name="projects">
-            <h2 class="heading">Projects</h2>
-            <div class="item featured text-center">
 
-              <div class="featured-image has-ribbon">
-                <a href="https://github.com/CSC340-sp24/wms" target="_blank">
-                  <img class="img-fluid project-image rounded shadow-sm"
-                    src="assets/images/projects/project-featured.jpg" alt="project name" style="width:80%" />
-                </a>
-                <div class="ribbon">
-                  <div class="text">New</div>
-                </div>
-              </div>
-
-              <h3 class="title mb-3"><a href="https://github.com/CSC340-sp24/wms" target="_blank">Ingredient Intel -
-                  Nutrition info made simple
-                </a></h3>
-
-              <div class="desc text-start">
-                <p>• Currently leading a team to develop a website and app that utilizes a database of products and
-                  ingredients to flag potential health hazards, allergens, or recalls
-                  • Architecture will include an android app and webpage connected to the backend and database with
-                  python’s Django
-                </p>
-              </div><!--//desc-->
-              <a class="btn btn-cta-secondary" href="https://github.com/DNAviator/CSC340-IngredientIntel"
-                target="_blank"><i class="fa fa-thumbs-up"></i> Back my project</a>
-            </div><!--//item-->
-            <!--//content comes from API-->
-          </div>
-          <!--//section-inner-->
-        </section>
-        <!--//section-->
-      </div>
-      <!--//primary-->
-      <div class="secondary col-md-4 col-sm-12 col-xs-12">
-        <aside class="info aside section">
-          <div class="section-inner">
-            <h2 class="heading">Contact Me</h2>
-            <div class="content">
-              <ul class="list-unstyled">
-                <li>
-                  <i class="fa fa-map-marker"></i>
-                  <span class="sr-only">Location:</span>Greensboro, NC
-                </li>
-                <li>
-                  <i class="fa fa-envelope"></i>
-                  <span class="sr-only">Email:</span>
-                  <a href="mailto:JcramerOfficial@gmail.com">JcramerOfficial@gmail.com</a>
-                </li>
-                <!-- <li>
-                  <i class="fa fa-link"></i>
-                  <span class="sr-only">Website:</span>
-                  <a href="#">http://www.website.com</a>
-                </li> -->
-              </ul>
-            </div>
-            <!--//content-->
-          </div>
-          <!--//section-inner-->
-        </aside>
-        <!--//aside-->
-        <aside class="skills aside section">
-          <div class="section-inner">
-            <h2 class="heading">Technical Skills</h2>
-            <div class="content">
-              <div class="skillset">
-                <div class="item">
-                  <h3 class="level-title">Java <span class="level-label" data-placement="left"
-                      data-animation="true">Intermediate</span>
-                  </h3>
-                  <!--
-                    <div class="level-bar">
-                      <div class="level-bar-inner" data-level="80%"></div>
-                    </div>//level-bar-->
-                </div>
-                <!--//item-->
-                <div class="item">
-                  <h3 class="level-title">Python <span class="level-label" data-placement="left"
-                      data-animation="true">Intermediate</span>
-                  </h3>
-                  <!-- <div class="level-bar"><div class="level-bar-inner" data-level="80%"></div></div>//level-bar-->
-                </div>
-                <!--//item-->
-                <div class="item">
-                  <h3 class="level-title">Django <span class="level-label" data-placement="left"
-                      data-animation="true">Intermediate</span>
-                  </h3>
-                  <!-- <div class="level-bar"><div class="level-bar-inner" data-level="80%"></div></div>//level-bar-->
-                </div>
-                <!--//item-->
-                <div class="item">
-                  <h3 class="level-title">C++ <span class="level-label" data-placement="left"
-                      data-animation="true">Beginner</span>
-                  </h3>
-                  <!-- <div class="level-bar"><div class="level-bar-inner" data-level="80%"></div></div>//level-bar-->
-                </div>
-                <!--//item-->
-                <div class="item">
-                  <h3 class="level-title">Javascript<span class="level-label" data-placement="left"
-                      data-animation="true">Beginner</span>
-                  </h3>
-                  <!--<div class="level-bar"><div class="level-bar-inner" data-level="76%"></div></div>
-																													<!--//level-bar-->
-                </div>
-                <!--//item-->
-                <div class="item">
-                  <h3 class="level-title">AWS <span class="level-label" data-placement="left"
-                      data-animation="true">Beginner</span>
-                  </h3>
-                  <!--  <div class="level-bar"><div class="level-bar-inner" data-level="80%"></div></div>   //level-bar-->
-                </div>
-                <!--//item-->
-                <div class="item">
-                  <h3 class="level-title">PostGreSQL <span class="level-label" data-placement="left"
-                      data-animation="true">Beginner</span>
-                  </h3>
-                  <!--  <div class="level-bar"><div class="level-bar-inner" data-level="80%"></div></div>   //level-bar-->
-                </div>
-                <!--//item-->
-                <div class="item">
-                  <h3 class="level-title">HTML/CSS <span class="level-label">Beginner</span>
-                  </h3>
-                  <!--<div class="level-bar"><div class="level-bar-inner" data-level="80%"></div></div>
-																													<!--//level-bar-->
-
-                  <!--//item-->
-                  <div class="item">
-                    <h3 class="level-title">Git <span class="level-label">Beginner</span>
-                    </h3>
-                    <!--<div class="level-bar"><div class="level-bar-inner" data-level="45%"></div></div>
-																													<!--//level-bar-->
-                  </div>
-                </div>
-                <!--//item-->
-                <div class="item">
-                  <h3 class="level-title"> Chromatography (HPLC, GC, IC) <span class="level-label">Begginer</span>
-                  </h3>
-                  <!--<div class="level-bar"><div class="level-bar-inner" data-level="45%"></div></div>
-                                                        <!--//level-bar-->
-                </div>
-                <!--//item-->
-                <div class="item">
-                  <h3 class="level-title">AAS <span class="level-label">Begginer</span>
-                  </h3>
-                  <!--<div class="level-bar"><div class="level-bar-inner" data-level="45%"></div></div>
-																													<!--//level-bar-->
-                </div>
-                <div class="item">
-                  <h3 class="level-title">Microscopy <span class="level-label">Experienced</span>
-                  </h3>
-                  <!--<div class="level-bar"><div class="level-bar-inner" data-level="45%"></div></div>
-                                                          <!--//level-bar-->
-                </div>
-                <div class="item">
-                  <h3 class="level-title">Pipetting <span class="level-label">Experienced</span>
-                  </h3>
-                  <!--<div class="level-bar"><div class="level-bar-inner" data-level="45%"></div></div>
-                                                          <!--//level-bar-->
-                </div>
-                <div class="item">
-                  <h3 class="level-title">MS Excel <span class="level-label">Experienced</span>
-                  </h3>
-                  <!--<div class="level-bar"><div class="level-bar-inner" data-level="45%"></div></div>
-                                                          <!--//level-bar-->
-                </div>
-                <div class="item">
-                  <h3 class="level-title">MS Word/Powerpoint <span class="level-label">Experienced</span>
-                  </h3>
-                  <!--<div class="level-bar"><div class="level-bar-inner" data-level="45%"></div></div>
-                                                          <!--//level-bar-->
-                </div>
-                <!--//item-->
-              </div>
-              
-            </div>
-            <!--//content-->
-          </div>
-          <!--//section-inner-->
-        </aside>
-        <!--//section-->
-
-
-        <aside class="education aside section">
-          <div class="section-inner">
-            <h2 class="heading">Education</h2>
-            <div class="content"></div>
-            <!--//item-->
-            <div class="item">
-              <h3 class="title">
-                <i class="fa fa-graduation-cap"></i>Academy of Engineering
-              </h3>
-              <h3 class="university">AFHS<span class="year">(2021)</span>
-              </h3>
-              <h6 class="university">Relevant Classes:</h6>
-              <ul>
-                <li>Introduction to Engineering and Design</li>
-                <li>Principles of Engineering</li>
-                <li>Senior Product Development Project</li>
-                <li>Flexible Automation and Robotics</li>
-              </ul>
-            </div>
-            <div class="item">
-              <h3 class="title">
-                <i class="fa fa-graduation-cap"></i>BS Biochemistry
-              </h3>
-              <h3 class="university">University of North Carolina at Greensboro <span class="year">In progress</span>
-              </h3>
-              <h6 class="university">Relevant Classes:</h6>
-              <ul>
-                <li>Organic 1 and 2</li>
-                <li>Genetics</li>
-                <li>Inorganic Chemistry</li>
-                <li>Cell Biology</li>
-              </ul>
-            </div>
-            <div class="item">
-              <h3 class="title">
-                <i class="fa fa-graduation-cap"></i>BS CompSci
-              </h3>
-              <h3 class="university">University of North Carolina at Greensboro <span class="year">In progress</span>
-              </h3>
-              <h6 class="university">Relevant Classes:</h6>
-              <ul>
-                <li>Advanced Data Structures</li>
-                <li>Software Engineering</li>
-              </ul>
-            </div>
-            <div class="item">
-              <h3 class="title">
-                <i class="fa fa-graduation-cap"></i>Study Abroad
-              </h3>
-              <h3 class="university">University of Southern Denmark <span class="year">(Fall 2023)</span>
-              </h3>
-              <h6 class="university">Relevant Classes:</h6>
-              <ul>
-                <li>Data Mining and Machine Learning</li>
-                <li>Advanced Molecular Biology</li>
-                <li>Quantitative Analytical Chemistry with Applied Statistics</li>
-              </ul>
-            </div>
-            <!--//content-->
-          </div>
-          <!--//section-inner-->
-        </aside>
-        <!--//section-->
-       
-  <!--//masonry-->
-  <ul id="userRepos" class="list-group mx-auto mb-5" style="width: 500px"></ul>
-  <!-- ******FOOTER****** -->
-  <footer class="footer">
-    <div class="container text-center">
-      <!--/* This template is released under the Creative Commons Attribution 3.0 License. Please keep the attribution link below when using for your own project. Thank you for your support. :) If you'd like to use the template without the attribution, you can check out other license options via our website: themes.3rdwavemedia.com */-->
-      <small class="copyright">Designed with <i class="fa fa-heart"></i> by <a href="http://themes.3rdwavemedia.com"
-          target="_blank">Xiaoying Riley</a> for developers </small>
+  <!-- ================= ABOUT ================= -->
+  <section class="section-alt py-5">
+    <div class="container" data-aos="fade-up">
+      <h2 class="mb-3 text-center text-lg-start">About Me</h2>
+      <p>
+        Howdy! I'm an incoming PhD student in Vanderbilt's Quantitative & Chemical Biology program who specializes in
+        turning
+        messy,
+        cross-disciplinary problems into systematic, data-driven solutions. My toolkit was developed in settings that
+        range from
+        processing 100 + HPLC chromatograms in Denmark, where I wrote Python scripts to clean, analyze, and visualize
+        the
+        data, to building a full-stack lipidomics website that will allow real-time insight into lipidomics data and
+        experiments. More recently, I designed reliability tools for a production RAG framework, experience that
+        sharpened my
+        machine-learning instincts and taught me where computational shortcuts break down in the real world. Now I am
+        very excited to take the next step in pursuing graduate research, with longterm goals to progress rational
+        enzyme and peptide
+        design: leveraging ML models to streamline therapeutic discovery.
+      </p>
     </div>
-    <!--//container-->
-  </footer>
-  <!--//footer-->
-  <!-- Javascript -->
-  <script type="text/javascript" src="assets/plugins/jquery-1.11.3.min.js"></script>
-  <script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
-  <script type="text/javascript" src="assets/plugins/jquery-rss/dist/jquery.rss.min.js"></script>
-  <!-- custom js -->
-  <script type="text/javascript" src="assets/js/main.js"></script>
+  </section>
+
+  <!-- ================= PROJECTS ================= -->
+  <section class="section py-5">
+    <div class="container">
+      <h2 class="mb-4 text-center text-lg-start" data-aos="fade-up">Projects</h2>
+      <div class="row row-cols-1 row-cols-md-2 g-4">
+        <!-- === Project card template 1 === -->
+        <div class="col" data-aos="fade-up">
+          <div class="card h-100 shadow-sm">
+            <img src="assets\images\projects\LipidLensLogo.png" class="card-img-top"
+              alt="Lipidomics visualizer screenshot" />
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Lipid Lens <span class="badge bg-success">Complete, Waiting for Deployment</span>
+              </h5>
+              <p class="card-text flex-grow-1">Fully functional interactive website allowing for visualization and
+                analysis of lipid data from mice. Website built off Django with JS to enhance data visualizations.
+                Incorperated tools for management of a PostGreSQL database designed to be useable without any technical
+                knowledge. </p>
+              <ul class="list-inline mb-0">
+                <li class="list-inline-item badge bg-info">Python</li>
+                <li class="list-inline-item badge bg-info">Django</li>
+                <li class="list-inline-item badge bg-info">HTML</li>
+                <li class="list-inline-item badge bg-info">CSS</li>
+                <li class="list-inline-item badge bg-info">JS</li>
+                <li class="list-inline-item badge bg-info">PostGreSQL</li>
+              </ul>
+            </div>
+            <div class="card-footer bg-transparent border-0">
+              <!-- <a class="btn btn-sm btn-outline-primary" href="#">Code</a> -->
+              <!-- <a class="btn btn-sm btn-outline-secondary" href="#">Paper</a> -->
+            </div>
+          </div>
+        </div>
+        <!-- === Project card template 2 === -->
+        <div class="col" data-aos="fade-up" data-aos-delay="100">
+          <div class="card h-100 shadow-sm">
+            <img src="assets\images\projects\RhodiolaDisplay.png" class="card-img-top"
+              alt="Screenshot of Turkey's post hoc analysis visualization" />
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Analysis of Factors Influencing the Concentration of Bioactive Compounds in
+                Rhodiola Rosea <span class="badge bg-success text-dark">Complete</span>
+              </h5>
+              <p class="card-text flex-grow-1">Worked with a cross cultural team of 4 in Denmark to correlate how the
+                concentrations of rosavin and rosarin are impacted by location of growth and plant sex (as it is a
+                dioecious plant). My primary role involved data analysis and visualization of 100+ HPLC chromatagrams
+                including method validation, ANOVA analysis, and post hoc significance testing. </p>
+              <ul class="list-inline mb-0">
+                <li class="list-inline-item badge bg-info">HPLC</li>
+                <li class="list-inline-item badge bg-info">SciPy</li>
+                <li class="list-inline-item badge bg-info">Matplotlib</li>
+              </ul>
+            </div>
+            <div class="card-footer bg-transparent border-0">
+              <!-- <a class="btn btn-sm btn-outline-primary" href="https://github.com/yourusername/peak-analyzer"
+                target="_blank">Code</a> -->
+              <a class="btn btn-sm btn-outline-secondary" href="assets\files\Projects\Final Report.pdf">Paper</a>
+            </div>
+          </div>
+        </div>
+        <!-- === Project card template 3 === -->
+        <div class="col" data-aos="fade-up" data-aos-delay="100">
+          <div class="card h-100 shadow-sm">
+            <img src="assets\images\projects\FucciSystem.png" class="card-img-top"
+              alt="Screenshot of Turkey's post hoc analysis visualization" />
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Qualitative Evaluation of Cancer Treatments on the
+                Cell Cycle with Fluorescence Microscopy <span class="badge bg-success text-dark">Complete</span>
+              </h5>
+              <p class="card-text flex-grow-1">Led a team of 3 to investigate the impact MLN 4924, Hydroxyurea, and an
+                undisclosed compound-X on Fucci system osteosarcoma cancer cells. Used florescent microscopy with the
+                Fuji software to track the expression of fluorophors in the cells over time. The variations in
+                fluorophore production were qualitatively assessed to help narrow down and support proposed mechanisms
+                of action for the assorted anticancer compounds.</p>
+              <ul class="list-inline mb-0">
+                <li class="list-inline-item badge bg-info">FUCCI System</li>
+                <li class="list-inline-item badge bg-info">Cell Culture</li>
+                <li class="list-inline-item badge bg-info">Fuji Software</li>
+              </ul>
+            </div>
+            <div class="card-footer bg-transparent border-0">
+              <!-- <a class="btn btn-sm btn-outline-primary" href="https://github.com/yourusername/peak-analyzer"
+                        target="_blank">Code</a> -->
+              <a class="btn btn-sm btn-outline-secondary"
+                href="assets\files\Projects\BMB508 - Lab Report Final.pdf">Paper</a>
+            </div>
+          </div>
+        </div>
+        <!-- === Project card template 4 === -->
+        <div class="col" data-aos="fade-up" data-aos-delay="100">
+          <div class="card h-100 shadow-sm">
+            <!-- <img src="assets\images\projects\INRAM_logo.png" class="card-img-top"
+              alt="Logo for InRam the company behind Ingredient Intel" /> -->
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Ingredient Intel <span class="badge bg-success text-dark">Complete</span>
+              </h5>
+              <p class="card-text flex-grow-1">Led a two-person team to ship a barcode-scanning nutrition app that pings the USDA FDC API, instantly flagging
+              allergens, recalls, and other health hazards for the user. The stack is Django + Bootstrap on the front end with a
+              Postgres database running on Amazon RDS, giving the service a clean UI and cloud-hosted reliability.</p>
+              <ul class="list-inline mb-0">
+                <li class="list-inline-item badge bg-info">Django</li>
+                <li class="list-inline-item badge bg-info">AWS RDS</li>
+                <li class="list-inline-item badge bg-info">PostGreSQL</li>
+                <li class="list-inline-item badge bg-info">FDA API</li>
+              </ul>
+            </div>
+            <div class="card-footer bg-transparent border-0">
+              <a class="btn btn-sm btn-outline-primary" href="https://github.com/DNAviator/CSC340-IngredientIntel"
+                                target="_blank">Code</a>
+              <a class="btn btn-sm btn-outline-secondary" href="https://github.com/DNAviator/CSC340-IngredientIntel/blob/main/IngredientIntelSRD.pdf">Paper</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= SKILLS ================= -->
+  <section class="section-alt py-5">
+    <div class="container" data-aos="fade-up">
+      <h2 class="mb-4 text-center text-lg-start">Skills &amp; Tools</h2>
+      <div class="row gy-4">
+        <div class="col-12 col-md-6 col-lg-4 text-center">
+          <i class="bi-cpu-fill fs-1 text-accent"></i>
+          <h5 class="mt-2">Machine Learning</h5>
+          <p class="mb-0 small">PyTorch with Lightning • RAG pipelines</p>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 text-center">
+          <i class="bi-database-fill fs-1 text-accent"></i>
+          <h5 class="mt-2">Databases &amp; DevOps</h5>
+          <p class="mb-0 small">PostgreSQL • SQLite • AWS RDS</p>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 text-center">
+          <i class="bi-clipboard2-pulse-fill fs-1 text-accent"></i>
+          <h5 class="mt-2">Chem / Bio Lab</h5>
+          <p class="mb-0 small">Chromatography • Spectroscopy • Microscopy • Bacteria Culture and Genetic Modification •
+            rt-PCR </p>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 text-center">
+          <i class="bi-braces-asterisk fs-1 text-accent"></i>
+          <h5 class="mt-2">Programing</h5>
+          <p class="mb-0 small">Python • HTML &amp; CSS • JavaScript • Java • JS • MatLab • C++</p>
+          </p>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 text-center">
+          <i class="bi-boxes fs-1 text-accent"></i>
+          <h5 class="mt-2">Tools</h5>
+          <p class="mb-0 small">Adobe Suite • Microsoft Office • CAD • Inkscape • Gimp</p>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= CONTACT & PHOTOS ================= Need to replace description-->
+  <section class="section py-5">
+    <div class="container">
+      <div class="row align-items-center g-4">
+        <div class="col-md-6" data-aos="fade-right">
+          <h2 class="mb-3">Get in Touch</h2>
+          <p class="mb-1">📧 <a href="mailto:jcramerofficial@gmail.com">JCramerOfficial@gmail.com</a></p>
+          <p class="mb-1">💼 <a href="https://linkedin.com/in/jmcramer" target="_blank">LinkedIn</a></p>
+          <p>Always happy to talk about science, feel free to reach out! Also the slideshow is of some of my favorite
+            photos I have taken over the years, I love to travel and try new things and would be happy to chat about
+            that as well.</p>
+        </div>
+        <div class="col-md-6" data-aos="fade-left">
+          <div class="ratio ratio-16x9 rounded overflow-hidden">
+            <script src="https://cdn.jsdelivr.net/npm/publicalbum@latest/embed-ui.min.js" async></script>
+            <div class="pa-carousel-widget" style="width:100%; height:480px; display:none;"
+              data-link="https://photos.app.goo.gl/6KD7ghdojx4KQP7r9" data-delay="3">
+              <object
+                data="https://lh3.googleusercontent.com/pw/AP1GczMyymf9qxSo6O1BbBsp_ZuyxwLrTPvkOi6U0bUyK7doiqYVbAp0mLTPdfIccbDoiRDGInl7J77Tq-Cd81FjJjf3aJ78m2teYVQLQFg3mxwrVcd57awZ=w1920-h1080"></object>
+              <object
+                data="https://lh3.googleusercontent.com/pw/AP1GczPrZHjeU0hvudalpAzQMNSgOBrcNpOx7OzFjDzoIB1OpsAAN5nlddVmPF-WgrKOYmYrVm4WFe5E9vsH3vYesrLPUNjIhLaADQyoIu-DikDUMUk8uzd1=w1920-h1080"></object>
+              <object
+                data="https://lh3.googleusercontent.com/pw/AP1GczPosfMAi8eD-WOL4BUDj_hFlldHbZ_1Bu7MYbOnZxSoi_BEeeLosw2sKc85Xo06nC1K0GxeZHTDT9uUwt2Spt2nIuUO2s-gt6rFYSZHaUY8ngifFsE_=w1920-h1080"></object>
+              <object
+                data="https://lh3.googleusercontent.com/pw/AP1GczPHMujRoWqNNCGSUq7bjAsDToD0GmTevP9-VcvM4stZ14K7EHBQ3HTkDp_FvmbqlN-zNPXcKugqeyDUxW0aHo0a2MBsDPWfmd1xhDmjVGd0ig5YnTC5=w1920-h1080"></object>
+              <object
+                data="https://lh3.googleusercontent.com/pw/AP1GczPPblrWPIQcpR3Nq89kg7WxSgyO-Rynlx3s8F2hq7calj34wTtUG1Ryp-i8KMclNK2aNpq-ZCmUX9O-eQBLDXZ4UxWzSO4vu-OXq8mGqmKf4RJy6NJs=w1920-h1080"></object>
+              <object
+                data="https://lh3.googleusercontent.com/pw/AP1GczPdgLVVgNTEox5GoUChTue04LvcyDia6HshbnusMASz4rDrzhESrxY0c1HxWqK2I7xFN55vCw22k-tPEL555qBhPSHaYosLaKj1pSjtUmoHo_awv_cG=w1920-h1080"></object>
+              <object
+                data="https://lh3.googleusercontent.com/pw/AP1GczO0DU_uPXRJ0q-rEIt7P3f0ijdvW4vdA97UWZ7hbPy9sd83r7CYt_jtz0nO0mj1e4zMFYQ-ZcYaPFNwN_a9yyL0IxBdyFBHvPZ0OiHiDFfj_AjG9fda=w1920-h1080"></object>
+              <object
+                data="https://lh3.googleusercontent.com/pw/AP1GczPE4MBFfis6YFxLuF6UtXePyTcZMc16uwshTDna7D9lguEygJbszi8jIaUhx6POtsconbyKOW50CNPSiFt9VdeGaPKqs8a2Vnc1ac6zKlHC0hWwTNt1=w1920-h1080"></object>
+              <object
+                data="https://lh3.googleusercontent.com/pw/AP1GczNVwrMROC1g7053TzfOLO7WF9MBIWTUga2qswRbA_puBilUcxiv34g4wlB9hspMfbRZZJD3cX_yY4X7s4XD0lA2OmlSep28d7Ty6BkfBTmQKd_k4_iX=w1920-h1080"></object>
+              <object
+                data="https://lh3.googleusercontent.com/pw/AP1GczOq2fe5utUkG9Pt9wFF6UkmZ6blYPOd4x7tKYx8GIVBJU9KVXXYlcoIHZg8FUFvnJH5uAEpIFNHxRzktf-4tJkZ2AtV0Te6RCGN2JD4oLK2j8KLz-aE=w1920-h1080"></object>
+              <object
+                data="https://lh3.googleusercontent.com/pw/AP1GczNklNZ2JMo0mMZsDrgBEEY80SWZAGBlqAPUsX-b-IrPGEPbhh07aXT9A0lT3jv_t9Eq3I5hW3xWm3POfQMQBww-e6jWH5u4z63HmjGWi9sPJ6zaJdCs=w1920-h1080"></object>
+              <object
+                data="https://lh3.googleusercontent.com/pw/AP1GczPgYocOKxp7MmAyTgl6M6dAMqpSdDFbyGcXuPGe4pqQD5pN55HRRtzYK2tdMalp7xIy36d4uqGZGXgwwCTJpQ5kNcaWpQ9rd6bhSQPuXLlgiED1Df0A=w1920-h1080"></object>
+              <object
+                data="https://lh3.googleusercontent.com/pw/AP1GczPAkwRdrq-zXUqS_833WylVrezY0bxlBQPmIZyEEqlZ8kB-ZxbGDX_6gw5lqaT8jj0jvXPXmpsfJx8TGeyyqCnUqYHn4kDgtaw8vJglqmN8-_-bW7Fl=w1920-h1080"></object>
+              <object
+                data="https://lh3.googleusercontent.com/pw/AP1GczPazqbivhS5Wnm7p9lPbCID4YXrQY6a5i1TZkVos-rNd0PGJnv2Q7WQb4tNqctcnS_IzrAQBOkybINoXY9XYOZsC7GwtoV55O_MCrCH02U1mJRBP0-c=w1920-h1080"></object>
+              <object
+                data="https://lh3.googleusercontent.com/pw/AP1GczPbY3KKh4by1mZlqCi7U_7oK0NmmFyYlSV7Qxqt3aYeJvS0AnF9CbV8EmAH9ze7ux2amsjNOkZqGYYn6vQ_MyMe8_NL0C2yMk09j7Uww7rMn6Kq-BFe=w1920-h1080"></object>
+              <object
+                data="https://lh3.googleusercontent.com/pw/AP1GczP-cNrxyEQQb2138uhIhA2tU1He0k_xbi0_G5XyDLMGD8Yipp5ZOxiUBAa76tdbGlLwf3DYo97JV2P99WLppuXerlScfnCHW3XUjEYtJMm_-ActUqDM=w1920-h1080"></object>
+              <object
+                data="https://lh3.googleusercontent.com/pw/AP1GczNtPo8XrqTpRDTcBeNPQwMeHeZx7Bhds2-50xfr8R43PiDytcCXGfZ_Huxv2Z_bszOGGfsjUsGPt9SjYj7YYhAs6tt1VOPc4FN27wf6-pTH_IHkIxkk=w1920-h1080"></object>
+              <object
+                data="https://lh3.googleusercontent.com/pw/AP1GczNCHf9sLGKQFYu6j5NiXVEY5zGSkChE2Atlka48XSXgRUNVXEmwOH1Ri5rysflo_Yoiejgwsj2IrW96M2o00R_xWxkiOrImIkgsK8J5nv3K1Lja251x=w1920-h1080"></object>
+              <object
+                data="https://lh3.googleusercontent.com/pw/AP1GczODjRUFm-geU9rg5lzLoXO_VEtNDsevp-m8V6oX09QFi0u2XqsqrFgK6bj74jBg0av5BHPaUbMknBi5XvHaJFgxDXp1GrXtuUBsS63Tmj4MPrW9Fan-=w1920-h1080"></object>
+              <object
+                data="https://lh3.googleusercontent.com/pw/AP1GczPXFQOpYVwMbnu2zK1Anv1YfDG5wAhcx6QQTc7f-hhx9ViTAw4yzyXO7HGxbSXY4_hxooDfVbDMuXEBDBq0pcaDTR7HDE86hwmYLoUc94s51Aufx2Yo=w1920-h1080"></object>
+              <object
+                data="https://lh3.googleusercontent.com/pw/AP1GczPXbIDgmHQeQGCV9ulCndcnmmkGrp2Vawp28QL7eGT9-4Zvug9yV___8SzdPkBmYstl-zIdPugmjm2afoJCv8EasKLGcbUjh5bL02X_7E2A1edpthax=w1920-h1080"></object>
+              <object
+                data="https://lh3.googleusercontent.com/pw/AP1GczPSOu_DCbgUe6e-NaG7T9coHXHTAp8e9obCmSHv7cekyB9Loo042nQO-XtbSg06RHeY8xQdw_CLlLRzDz-vNyzW4vElSQG-KRpkRHV_jhGejyxKBeL4=w1920-h1080"></object>
+              <object
+                data="https://lh3.googleusercontent.com/pw/AP1GczPmw7glRWVct5tkblT24HHRIJfsVqXFRIZP-lDBJbYes4X74RNH_MU7fEJIlXk6LBX4ITF1FPsbN7xy-4RJ1UIQXB0l0qQjdPZM4V4nYG4iARBoveHp=w1920-h1080"></object>
+              <object
+                data="https://lh3.googleusercontent.com/pw/AP1GczNbUt7dbAqpmdRfa30WWIU5FF1x34EgZsdZG7pVkc3U7-vYu49Z2kPxilUB57USlWvpOQ3DNJuJ3k15_VxKrUHfDNeChKgeiF73qpFH19oqkK3vSHH2=w1920-h1080"></object>
+              <object
+                data="https://lh3.googleusercontent.com/pw/AP1GczNvYIjy7TXldQmH1UHv5K_H0Ofhu8QJei11C1TpmzKSzdZczIpJHBr4H0FdZEucPWjV-HH_YHvT9NF4BUQRGZ0Rzn24jbc17ueYWmTWezyWiMQ6jKh1=w1920-h1080"></object>
+              <object
+                data="https://lh3.googleusercontent.com/pw/AP1GczPQ6mRm4R6OVGQ3KZmjq4JD_M0I5qLT8VTBA5bVyQfO2tWZyAu0iVxmP7HEvOajIYhWbwoPAG6ei4ScLDxnBOqVx68IBtiePDIFCKrD7bCAF8NLIUki=w1920-h1080"></object>
+              <object
+                data="https://lh3.googleusercontent.com/pw/AP1GczO3YQgCSt03Sc0GC4AssY_s49ff7rDJqqVAQ62Bwcs1nofZjDbbkRQhX3voGtYKBrW_gjyJWPyF7FDqzmFNWA34W8c0tgg8VTV8EVG6temtUDEsr5nY=w1920-h1080"></object>
+              <object
+                data="https://lh3.googleusercontent.com/pw/AP1GczPQ37DnD1GOwWnuJWa3ziZuX8CBmxh1ZSoyh22CsSGdmarhdlKjAXSbHgkfeiQGuYcWIsuXp7b39l_H2hk4lC902YGoENoW9aSsjHOq9ggHPrzNf_ov=w1920-h1080"></object>
+              <object
+                data="https://lh3.googleusercontent.com/pw/AP1GczMI2plKa1uWg8UbOp6r1pnp0BaTcN909v4KnApDc3WZ5RUWH8UG2Ji58N29JhWP7DeOu41Hg6_Iuw2MrjkHTjwMH9ssIYERgP_uZ1H-8zPkX92Pn7P_=w1920-h1080"></object>
+              <object
+                data="https://lh3.googleusercontent.com/pw/AP1GczP6Pll9HycDqtKyqXY4Judflv4i_kP7sWy2I2AWxaxVv5BJVpGYaaEPO5jh_IlOdyRnPaIjLpUEuPE-f8MGZ0YBRqqWwtNrY-DBoV3jVFxh0cbzJeY0=w1920-h1080"></object>
+              <object
+                data="https://lh3.googleusercontent.com/pw/AP1GczMioVimWWZ5ocFhTzU1JyDgoDNEo3Kw2qXurVA1RyDS769WjlwGfNFCmZAKjzvqP6Va38LVTdecIc5s3AtMNBOwWRJzozskzovBs71ZgEFroJCgvEJu=w1920-h1080"></object>
+              <object
+                data="https://lh3.googleusercontent.com/pw/AP1GczM9RFzz3Dkx4qECkI2RsBO7J05_ZC092D-p8B3JE5ve8JfkqFn_vXnd-w-BmGFmzwQxOt1--a0YRfYvtcZcQftGaSlDWKY9F0b1aioc3TisWrOfXXf7=w1920-h1080"></object>
+              <object
+                data="https://lh3.googleusercontent.com/pw/AP1GczMV0dVrfIVkrs8DdhksZKOE0kIN7qYcd6wjNvQTVVKKU684LjVmXadK4e7BSdKaZrYjVmapKAGWlNMMOxN4vHErMZSW3YKMoaYCUvvgCS3hRjRJm2aL=w1920-h1080"></object>
+              <object
+                data="https://lh3.googleusercontent.com/pw/AP1GczOz1XTs1bB2boQpUzaeBJ9QGnAAHmTTkCsMNy0xCuQjQiqam1p8IQ2az-u6QD51IMWZgBiNh6rRlMY--nyZLR2auq5UyCiMjFgTLPWJc21PXBAgLL3e=w1920-h1080"></object>
+              <object
+                data="https://lh3.googleusercontent.com/pw/AP1GczN5CrKe4f5ZLUNhmmqHlLJky6fix0wBNafoDCt98GyRHcxjlg01MHyn2L7rr8P5pZKNZYHIzr1IeC7sCd07C9FHgjT5FaYrXYbIOVh9Iy46fTH7wYEp=w1920-h1080"></object>
+              <object
+                data="https://lh3.googleusercontent.com/pw/AP1GczPePHxG4Te9sALRxpZQW4IG8_BJ2R4T0DzrqlcvWZWdpFq8pAFEzcsjrz3SpY61r-Ucnjy-8ZxV3QfpGOaaG6P8F9s34rhO4WRNcoMJPz1iD50FljHt=w1920-h1080"></object>
+              <object
+                data="https://lh3.googleusercontent.com/pw/AP1GczPI3X7_fyzAxhSub88HG4JdKHd4jDqcfs74MARg8u_Jb5W_XHe-tHvWwXpT_9oKMCoBD3y8D7fLv0qQyh_xKx6h8GZAZFJ4sZ2MfaJlqZ5G2PXjYsgh=w1920-h1080"></object>
+              <object
+                data="https://lh3.googleusercontent.com/pw/AP1GczNj0SScThhcr1XQjsg4L-Tc88b9Yc-qjNH5qqKpkB970Tr5wccReafFKE--Vmsg-6X-XTZ9nRp1k-g4SjC9wfBX1ovRUy7e9HsrUF8DQtwESwQcfqw_=w1920-h1080"></object>
+              <object
+                data="https://lh3.googleusercontent.com/pw/AP1GczNoAWzw4JKkCSxFXKhHze4KLJq9LUiZl724d6Hcm9oZCkw-YfnssagSHrpuLHmfYkJQrxg-StW7SIHPS27McgxkNbEX-HZniF0LqDTLhz96q1d1_44M=w1920-h1080"></object>
+              <object
+                data="https://lh3.googleusercontent.com/pw/AP1GczN9BM5ZeZPBU-ZxF02XycLj4T82_Nbj2Qc43He6vTiDcgVy0GSPd1XxgpX6bYQgVsmiKjVauccpWlo32_o7f6JD7MtfjSPr1NX0AMnu7oFqWV_x3HVL=w1920-h1080"></object>
+              <object
+                data="https://lh3.googleusercontent.com/pw/AP1GczNDc3zwR4ygoBwJ0oK8nLAmENIxnAmckKorK-zomeqwsFwU-CZ4DRkryAZXi9SVBwicUIq0JWBT7uHjrEip7S97lLQeGPuCLe3Zds7NPlPyyGKvvtRK=w1920-h1080"></object>
+              <object
+                data="https://lh3.googleusercontent.com/pw/AP1GczPzvMuo78wjYENVkfG0D56GiPI1YTXWaYKrFcPHLf66offhdWG3gqcaHEYABBjAsb7NrBCQAnIzHU8pg40d7Qc_57wWyXtzfoVTLJL-KsZxMvxVWFnZ=w1920-h1080"></object>
+              <object
+                data="https://lh3.googleusercontent.com/pw/AP1GczNQlDR9MUKWFZYUidViKwkF_Oru-ynyTpw_BGx9XrZJRqCVUAx84hjsDg8oEEP9aIrGl4-dVK1Ilx1WxdCVc8Po_MWCHHr-gY4AfQyP1_Oydrytcl9G=w1920-h1080"></object>
+              <object
+                data="https://lh3.googleusercontent.com/pw/AP1GczO16k_3KHHFHo2orkd0VvxTmWoCSRz9d3z1TRZWTWbhQnQmcWEyHRshwgHE5_q8-SZiRMRg2nWT78sOVqb5WHUAQJ6djbv1GhQOW8xSDp6rU-iqkjjr=w1920-h1080"></object>
+              <object
+                data="https://lh3.googleusercontent.com/pw/AP1GczO4LaQ34gaZtf8oHUMk1llhZDY0Qa8EGxH7f_YMXofVCslM_5bJiGDTe2t6CeUudf7ej5-Dtu_JwyL19_fyppOTa5h8Z397Y1sqcdcOH8PDqwuBOl16=w1920-h1080"></object>
+              <object
+                data="https://lh3.googleusercontent.com/pw/AP1GczNStR1WJdE5DbMAsUV6d6m5DLhz6jQxSI7_ISQ9vyuNkkeXRWTG4RrlAkec4NBHI7WYBz7ctkHnH6xIuwBYkUBUid1LHixeEt5rOTzI8vloR65MMIKo=w1920-h1080"></object>
+              <object
+                data="https://lh3.googleusercontent.com/pw/AP1GczMg_7h5HbJM01AvEZxvXWBOkbsQAp72UrUiq1FsHKrKBeSxzi1s6JAYbEyacDicT7KrqpOtZwba-S5Qa0a2L8yGmJcU05JZaHMozeo9mbIaBOtYkAM_=w1920-h1080"></object>
+              <object
+                data="https://lh3.googleusercontent.com/pw/AP1GczNIR9kwXFKHBKErD6spWxc7cMEqlQQbG3zm3BRUFn75WuuBXCOwBYXwNjE3tIsygSq0YZu0MWsCuM9-3D2i2q66kds8JG6nJYFNNAFlqABEQRMDsNaT=w1920-h1080"></object>
+              <object
+                data="https://lh3.googleusercontent.com/pw/AP1GczOFddgpMEltXAF_JUppGZJi-GXKjk8GUegHmJMfi_gsc41YkoIb2EsFLv3x9MZyCjXu1M0DuH_dlLAsods9bCW62cpEEM-IYZQGY6kTSv_OrLlOtPA1=w1920-h1080"></object>
+              <object
+                data="https://lh3.googleusercontent.com/pw/AP1GczMYFx9ad924vtsZ04WI75ezmzJUyiWW1X0iaZCO0wAFFFp24Mt7sa1Kj941fDGFYFxljM26PD9_Ee1gsSZBkXRrAVP0x99CHTOuPb_5egGWFNa4tze7=w1920-h1080"></object>
+              <object
+                data="https://lh3.googleusercontent.com/pw/AP1GczOZ0eRDfivrtqTnlmqvftlZjo1u4t8b2jjzJkTcB5SM5T8VwhxbuYX8Kb7nSk2H_mDN96fPEhmBqZ_AT2nwBw3UvaxXHYLL6m3UrvV8Ipn3QCZjwe8S=w1920-h1080"></object>
+              <object
+                data="https://lh3.googleusercontent.com/pw/AP1GczP8dejDAAXdJ8J15l78BtguN1CQs-kPesCyf3YQtbDQF3BYg0DPfl37zYI-yxJVChvgb9jUtW-mQpAJxs0yjM8ZwfEhG2Ooi6RXd0LI-_wzsE0Q1Sjo=w1920-h1080"></object>
+              <object
+                data="https://lh3.googleusercontent.com/pw/AP1GczOv5U5RQ8BTjJotkTsda0c77sEpE0qBSWTnroU7lERP6qGoFQRR9-V_Rv6Rh_ldmRWzC4LVS9xF4KF3RmrpQRASpItPGuW4FXqOck2HoodLkAqIXzTG=w1920-h1080"></object>
+              <object
+                data="https://lh3.googleusercontent.com/pw/AP1GczPw1l2tpuMn3J9r1gVuQ6C5tzt3NSZ8liIlOKHWc_yd1VIsW9U6wrwccqxTf3MVMglSdTkfbDFIkhAQKvEi4EAa_tX_k1L8TSVGsRAGN-SivGAWc_y1=w1920-h1080"></object>
+              <object
+                data="https://lh3.googleusercontent.com/pw/AP1GczOEHpITwX5bs43z7uI3o24KKWa86MVC497WONQ6FK__WXGAFcT4ZEX8vY4jipW6QO-ykIeCnBywdy9vO7JnovPE_YYkn9wJSn3Lf1Rx7cArrwDoPRWR=w1920-h1080"></object>
+              <object
+                data="https://lh3.googleusercontent.com/pw/AP1GczPuTIo-9YLt74kH8Br97wszQfXvpl3mh3XD5Gy3Fi1TzpfeUCkjNtTrlEXS4681rUeK2HgMnRbW40uXUQQh3bvX0Jv76gXOhj4ieBd_RorvDr8e9vgk=w1920-h1080"></object>
+              <object
+                data="https://lh3.googleusercontent.com/pw/AP1GczPO9yHhcdhv5NTokY4b5S5BdIVweFdEOEBYneylyHWWOQIDpPKGzwRyE1DtJDYNUXU5cGRjN3JdeGi-LErengDXB580nKtBlWpPC_ZKeppgl49ajgiX=w1920-h1080"></object>
+              <object
+                data="https://lh3.googleusercontent.com/pw/AP1GczOAUdspiMEMgZumzxA9XwFSnxKRIe5ZgB6JQoQIjgfVoGT8usRGef8x2qcfuALgNuoK0uzJy0fQ70WLw2UgK9oLXf_c_cn5ouOhKLqxhLqkWyHtWkcz=w1920-h1080"></object>
+              <object
+                data="https://lh3.googleusercontent.com/pw/AP1GczNtGWkE5y5qLbRQpSJFHbziwBFu8Rh8xIKm6u6XT84vJhdMwbJTRkB5D1tYFV0BYahn3-TPRviubxqVjSp82K5W4ajcyyUShoLrJDkeJ2q9nLtpjfsL=w1920-h1080"></object>
+              <object
+                data="https://lh3.googleusercontent.com/pw/AP1GczPYgpatRh7d8Aison1X-JMBS-v7F10zhlx1TqQxyYCLHe2NG_Pb4xp41GWeDZ-H7IY5t71rwGSl2n_07l-xU7-o5COz7foi0d-VFrlamXjKIlR6mnQl=w1920-h1080"></object>
+              <object
+                data="https://lh3.googleusercontent.com/pw/AP1GczP23Q4SrLhOosh1GxGzxIi4nAmG7cvgD9PQimU_xGx7jd2z-x47E4bVWEtre6YPyq8ofakmz-ks3H_L8puEbnettMNnm6DHl3yQrHIXKFi360h7xstU=w1920-h1080"></object>
+              <object
+                data="https://lh3.googleusercontent.com/pw/AP1GczNxafqtXhRA7AEUn_vV-DOlznEAtO6AE2af7YwO16WYwx0Md5UOM3v3gr3312BYD5Zku3UOghbtGmIgmP7allEu_3TLeOj4p3Bt85V2grvPkblDyyjd=w1920-h1080"></object>
+              <object
+                data="https://lh3.googleusercontent.com/pw/AP1GczOXC1pDjBpNVdIYiR_pR8xMsgkFbpK-8NJDfIknH19mYxjBIMhEttu8BvWNNW6dfSlY4vBLeP7R0JII5PRO4-GbFTQtjZQ9vGstolx9aVqAPWOxBZNb=w1920-h1080"></object>
+              <object
+                data="https://lh3.googleusercontent.com/pw/AP1GczPBbJdWBlBMSuhGQBm9zy8QYV2JOttpxgBLhi3MxVhnm3rzR3s_5CBejXe821TUuDGldp6kAv2KMXPV5dLzzuO0HrskZePsTlJGL9t1xQzzK_d9HbFR=w1920-h1080"></object>
+              <object
+                data="https://lh3.googleusercontent.com/pw/AP1GczP5gJc6flPYnvO6sMsFB7puLXNQWJ-NGrHQ-fPShRwYi0NRy_5z_8R5r_ZJZ-CUQPgcKcSio4pTuK7Il6xQiDP8IrgPN0EA4aXWOR5B8NjZlik9HG-L=w1920-h1080"></object>
+              <object
+                data="https://lh3.googleusercontent.com/pw/AP1GczPSBA7cNdN9aeHr-8mhKhPK9QbIJabUJ5-mp6LmRn9f2XjUAvBgRK46XrCCjFxusamDG7LwmtyEZjKPoSu3JaoW-rrNqdLym2rBLLLN1djmSsfHJu0A=w1920-h1080"></object>
+              <object
+                data="https://lh3.googleusercontent.com/pw/AP1GczN_2mEAPYikAp5qLMetZa94UDB0fYcSEbgXzNqvkaQKq6iLniJRjrg1fBEh-OQL5GpGlBMe1WUYmo7ExaWNEGyL1fokLp-Yy7g7nv90JBgiz54P1ohA=w1920-h1080"></object>
+              <object
+                data="https://lh3.googleusercontent.com/pw/AP1GczN_7D6X7dF1FMy5VNl90v3ijemhYo3g9VXBFGDhIPHe8c8nPFO1iaf2QAwA2szX7dKvXuQ4KTn8Nokkr-JkZaN7ySzxjuJzQWBCgOJb2Kiz165Vv8zx=w1920-h1080"></object>
+              <object
+                data="https://lh3.googleusercontent.com/pw/AP1GczPhCuTrwsuXhNX8UqHNskqi04HTLv24qb89SVt8uKx3dscvOWJX7gmPlQ7h8vlWMVFFiRbjA4iXI8Egn3NVG_drU566L1BAhNZnyN9TP2xpA9favWoC=w1920-h1080"></object>
+              <object
+                data="https://lh3.googleusercontent.com/pw/AP1GczOgZExjbDDuLDtEe6cmlWM1uNqnqc-GQo2WpDlJKOGZrmCunL9chufKwwcxNK52u6DLhIR4ycn1-mpuhaidtCD15u2-Qeax3H0Kz6nvvnk9eBtnHf1-=w1920-h1080"></object>
+              <object
+                data="https://lh3.googleusercontent.com/pw/AP1GczPssCThRBVfLzZZaUhvsw7mbC3DP3l2sfOaDovTDB-NCAVCzKKkMqkmDDSGacRCvGqb69qZM1dTAN8s0cKeGachCS9Kd6t_f8W69SRDKpTGqk5_sScY=w1920-h1080"></object>
+              <object
+                data="https://lh3.googleusercontent.com/pw/AP1GczO4jSIe76gpBE97yaY6_nVE7hXrfZnJf2n6No409NcyaZaj1hcKoj7ygnjS0p5dXFdNtxXIvMGLtZUnSBEyilT_pSb_KwZZ65Ug8e8hSmbUp02gmiWV=w1920-h1080"></object>
+              <object
+                data="https://lh3.googleusercontent.com/pw/AP1GczMLR92ZdHRA2T6sNY_XF9hH20rOfLsKEXSYmRe3cEdRyQGL14YIoiGC3s7BnU5fTOiJwy_KamXxZzipZVs9wM3kIwn8KLmR4yih16AHhqhZs39EISEC=w1920-h1080"></object>
+              <object
+                data="https://lh3.googleusercontent.com/pw/AP1GczMthQlNW7g8npzxZ31_3koNx4TNpAidLeiRtqnEIXDy50qt_WZvTZcuQ1cqK0rZdG7FUoN2FjgXcpI_O5435Z49LqkaxNh5l_8w2N5jxZGAQYimoVcn=w1920-h1080"></object>
+              <object
+                data="https://lh3.googleusercontent.com/pw/AP1GczPAHqI-hGIe8qRpWt-eFRku4Jqf0rlhb0tXmAdKM-ug65nX85aBbI9xoQVNfpI4bXuxtHgFfdwz1OIiYzK3IqdrbFJSBhMkMprzhEuSyxwb6LvpsIWg=w1920-h1080"></object>
+              <object
+                data="https://lh3.googleusercontent.com/pw/AP1GczMDjx0u3iW1UbS84_Vi3oYFL3XgKqajFKwpo57dLHPg5S3NFIH5Vx2Ruqx3IMotb7wn2NVF0y6S0Fyq9Ycs_dcz8x7PGLjvr5GNcGWGV8GhOuWwLwCI=w1920-h1080"></object>
+              <object
+                data="https://lh3.googleusercontent.com/pw/AP1GczN1yzmyDBcXraEQg9uAgHFP_ZA-AbGF_-Yp2nWRRvWBDNM8xbeBID8wCPSMQH9NcOmGtUBv6RN6mokGM0wB5pQum8BJDmDwGtHUTGO4OceY5xKe2RAL=w1920-h1080"></object>
+              <object
+                data="https://lh3.googleusercontent.com/pw/AP1GczOK-GkW-CvsUJCvoAAUgJejsSxq9Hrr3T77DDI_fmrg3DU9ViW1sB8B5jPk6nGDwr19QSXPbvgi2LRyvBrVTz7cffgBkgnUgblIpGvMalpVpig-VsRn=w1920-h1080"></object>
+              <object
+                data="https://lh3.googleusercontent.com/pw/AP1GczM3gZA43mbQonXCijlW6iKsu3Zs02Rqm6J0NB2Ln9OG_sInHeXMffPL8IW-33Zu0dJhNtFPhzACXwLZTVhRwAD8vSFdC0wOBx_UhdCrRYj0AX2BdXwA=w1920-h1080"></object>
+              <object
+                data="https://lh3.googleusercontent.com/pw/AP1GczNnzU-YVPu0H2jDBoayENSGoigkCIBMFfhSwV0oMFCtA7LSCfyXVb3Z6xSMd1W6V17YtpzQTjZSb59ZZim1uHJOZ7D0Y_xtXu3RaJjgLjrp1KfuUpXV=w1920-h1080"></object>
+              <object
+                data="https://lh3.googleusercontent.com/pw/AP1GczOJ7_wPaO0SVP8iYa6KY9L7Z-iPV7dKlv2BPakrUcWDUL1R6OardgzTSdxSjgp4elPRYryjev9qiq1jGm1niMSkp9QleBsZotIL608jrR12iodVlnfT=w1920-h1080"></object>
+              <object
+                data="https://lh3.googleusercontent.com/pw/AP1GczPGO3DoH6ToDaF3hm8ZU2tXMH8ZoQlPdh8RQ7c5jQibgykx_AYLBgi98FGlPU4StteJeiwTGNe-Lh6Ey0jW2SnSk4pEynGv4Ih9f-lOpSJEhnDLgly_=w1920-h1080"></object>
+              <object
+                data="https://lh3.googleusercontent.com/pw/AP1GczMY2P9Th-gwL8mfBMpAsOJSlGgunRAiHJiI5Np6zHDedaVU9yk8r3Jriz7HF0N-8JIgKaZ57iIC0rmDyKGUyrjmYapTqRjI10oo4dMrffWQ4CJE0U9w=w1920-h1080"></object>
+              <object
+                data="https://lh3.googleusercontent.com/pw/AP1GczOXx-dYCSf93GQiNwvpzF07vEV8EDMHWU9zjNLaZWUEFICSohzkW3e5_QCcHO69bjElMbYn52ZuhIAAj6yZmZcwDe9i9Ew1wanhca8dzzpQnWcdZGVo=w1920-h1080"></object>
+              <object
+                data="https://lh3.googleusercontent.com/pw/AP1GczMtogh8kWyZo8KZExsl9qlxpweM1um7hXQCqB3EYGn55zJXRLFgGVqw3mXUBYy1cKQV2hEunFSEItqm3OfMHJZIQkAu6l34CpggI5lJRnVMQTxeYYDU=w1920-h1080"></object>
+              <object
+                data="https://lh3.googleusercontent.com/pw/AP1GczPwZeL0KG1QIZYGhCnC-EFpU9DlaiSDZH6Dj5dPYr2EHuHuy-LL3cClYuK0vJzrzSw9Dlvqq7gfstO_tpOG-TsaLuBn7TID7W3n32It5TrCyD7yCERl=w1920-h1080"></object>
+              <object
+                data="https://lh3.googleusercontent.com/pw/AP1GczMVlsdDWIUqqD3BTWy9pJDj__PXcz9deCnzb-mSJGwC0UsQn9kQSPkPhMS71LJLSnpATcDhBZaBjLbewBUO4pWwGSOI2mxVldiXxQAm3dL_q5KupYDl=w1920-h1080"></object>
+              <object
+                data="https://lh3.googleusercontent.com/pw/AP1GczPnWiVwtI7H4jpqCZOVqcC2UuAyakj43MI2zugSRs4pOjnGN0tRyglPuiEzFXbvYEMLZvXNu55fNfFieRLPB8PPOEGM205aJKdob0XJP-z3EvibQT6i=w1920-h1080"></object>
+              <object
+                data="https://lh3.googleusercontent.com/pw/AP1GczN6j_0kpA8B7ad0UuQcKAwei5ImBB9-kh19hYhknbpUPyF7Iocvbs4QkXFcxu4N4IxaiO_KTU1VPUTufWmXRpa9G8sbP_VB4Rm0JVaW339dAwDIuNCC=w1920-h1080"></object>
+              <object
+                data="https://lh3.googleusercontent.com/pw/AP1GczOzOERpNn76GhbhpcG7Iw62ewdEIaJZ8LZRx8Hk-ochqqe-r9voNJscFU6UqcZYy2ht66YKPQ4HJo5alhLo9uc6LX32x-R74vF2JJdQM454UwqzTS2i=w1920-h1080"></object>
+              <object
+                data="https://lh3.googleusercontent.com/pw/AP1GczPG2pfLkp9IyhicYTXEWY6zD8JIeFRpdS84z6iXMMpX1IqijrrYtkqdHrk2M1qWd1j1IXJqh48naB3073z_aW_HilJsqRn4dNhlzG1OBH5u4r9Hc5ji=w1920-h1080"></object>
+              <object
+                data="https://lh3.googleusercontent.com/pw/AP1GczOOh_456ATqC6hxakSdWU2cXDq7HwUwQA_zWuYarMHKBXBpHgKDOB33rxKhMkv4tFbbx3sV1u2efK9m0zPHUZv-qwFHfieWY5kMIsEIS3s2ECE5brKX=w1920-h1080"></object>
+              <object
+                data="https://lh3.googleusercontent.com/pw/AP1GczNl6eIbUp0CMVR5zRBULpmLUAHofsd5P3FSSHgWdcuE9-rQHFFGUgQNklfGhfsWujBNhE0RqnxXyVHsJyNfBlNt4im-lnLFiu17MpZnVGwWcnnM0qoA=w1920-h1080"></object>
+              <object
+                data="https://lh3.googleusercontent.com/pw/AP1GczN7DltMzgMjwwE9Xne03dVUW1DI53o2vrBPdlC4tdQG4CLnbT3OW79XOYcCTg3Go-1hGEkM-lzJptuFxcAG9vOzkyC_pmvWfk9Ztaw0pLs1xPLX1i5Q=w1920-h1080"></object>
+              <object
+                data="https://lh3.googleusercontent.com/pw/AP1GczME0Khfeyv_x9WxP6-FKO5L4J6vLl9HyXV2acj-2i24VWg5MojqdMvJCBE6GsmwMgQlF49AEyWt08d52QAvuliUK21O7nybuMSJBQS1qrs4cxYKp3Lj=w1920-h1080"></object>
+              <object
+                data="https://lh3.googleusercontent.com/pw/AP1GczO7XLFUViivpV1BgJVeYlXhm-xl_6Dyww8hbEqEgesEGH0gEetGwGzRpYzD6lorRqrWuT1AfhDURbq_JHXviUTzKwTKFLQgRPDd-G4kH4dCaPWlzFij=w1920-h1080"></object>
+              <object
+                data="https://lh3.googleusercontent.com/pw/AP1GczPj8m-shB9tNzalCP8kdRNEc4XBB7eNRIAUiS-XIhMmbcy5orurj7mM5socEqVxz9oAqYeSf73HnpXslzh1-nuO9AgvJsyx61maGoRvb-X4SJiDDexs=w1920-h1080"></object>
+              <object
+                data="https://lh3.googleusercontent.com/pw/AP1GczNDsmNA547dgygODa23I6XPtFvbR1rdJRDycwb1YuJXVlECrB7r1pohBQoWHFaiAZiZ6sMjLUoWUBhv9ZGAzKOc898tNTXi7SRjCX6g_uM_UiVS2SAR=w1920-h1080"></object>
+              <object
+                data="https://lh3.googleusercontent.com/pw/AP1GczM6IqsWYifcyweXjqQyg8EKf6A1HazducDOgyFT7yo7jDMqKuoMKWklVu6OMrJIo2gqqlANsFpsxOhH1qg2s3oIghY6wFtjCnDegNhUbCqJPVCzGPl3=w1920-h1080"></object>
+              <object
+                data="https://lh3.googleusercontent.com/pw/AP1GczPRzJztZZBFfHouA1HHkmW_ALfIfz9pxLCatm_9rOXvqYjMDr0LmHHVZqr7hHipWfafre0Gr94AuS3RyebLbGMz7I227b4VMqZ9cU3B62Q4mY5qCgoI=w1920-h1080"></object>
+              <object
+                data="https://lh3.googleusercontent.com/pw/AP1GczOYV00iyty7JfaW5kC7cVNRKxhUcrzN0dro9CKESd-tZbz7DGEypCOnNVgIuzWOSq9wUkoE2xEDyfua3xEJRmW8wPkGTOdpSKLTwQLxRHHYgpah2Fy3=w1920-h1080"></object>
+              <object
+                data="https://lh3.googleusercontent.com/pw/AP1GczPi9GXdalFPWnPoh8e7Rgeva-NlZAFsyP5iEDmElcA7dnQA-KO_N4_ftA4Ie6eoRjTQmsIPkDSfwhHxCEkCy7AUKFmZPDflVUBzWeh0CpvNdK7iS7Bc=w1920-h1080"></object>
+              <object
+                data="https://lh3.googleusercontent.com/pw/AP1GczOhJb914WsAttVrArIHum4fgtx0H60PGzgnh1mmDBlG1l3kwk_D6jI7FuUUSEY2wpJtK1IpB7PLWVlWD3Uaw4QkjMcSpxgq0di8Fv0dyRiCxxygjrni=w1920-h1080"></object>
+              <object
+                data="https://lh3.googleusercontent.com/pw/AP1GczN6nH0aktzEYN8VKpcDEBOZPYyX7LsevXAUpkIF63tBtubXz3tfDlOrZPlZkUzZLdi0AW3nj6LFlqFC5eYRzAWCG91lgmsFbnogdXiYNsWvyxYycqD3=w1920-h1080"></object>
+              <object
+                data="https://lh3.googleusercontent.com/pw/AP1GczNbMIdbvgk3jbs8FgS-czSJU-lv8p7_5RtZDRm3aeupeDdd9tSYVrIXbk75Du1Ke_aOAcZJievpF8ztPs3E4czXJcZlsrDYE_1qNic99GuQAgac8kyz=w1920-h1080"></object>
+              <object
+                data="https://lh3.googleusercontent.com/pw/AP1GczPY_jzgs4WdI1eufqz27sBMm0Y3V0M2VA5VkOeIA4cNjY-huPZcTJLSXQR01P8pzfq7qc5i6SvtxJQONlsTXh0uhcEXUpLq5KXxQcMVqB9yH7N2JpvC=w1920-h1080"></object>
+              <object
+                data="https://lh3.googleusercontent.com/pw/AP1GczPBDuhtO5RmNCf5gvWkKaETbtTgYYzlDNvphCgXwm31ymgYU8fq23E-mj64QBRQgcYzgqBOxKUxRc45KdZXxgbJpK0jsgOdsD2ta_MRJdX1AxnC9QAl=w1920-h1080"></object>
+              <object
+                data="https://lh3.googleusercontent.com/pw/AP1GczPA_-_DAD7Vv-sSyMlotUM9VXYkmfu_taP3NwI5k_aw-WDS3KO7gCytlbNGzJYnAlPbSM5DF7Z48ssb0u-n73wNaiKLCuXuUCigZu3IeSMH2rN5QMty=w1920-h1080"></object>
+              <object
+                data="https://lh3.googleusercontent.com/pw/AP1GczM8NlyfEXKBx_G_zpHmZ3S8XQdszlXaS0vVZFYIbYSmWKqHAeUYEhWwdEeOab5om2ekoRLkUmAY3zTZ_z2BXhH2H7qLtuiXEL-Z3dqa7Q5wfrr7S7iO=w1920-h1080"></object>
+              <object
+                data="https://lh3.googleusercontent.com/pw/AP1GczPZrUl3McK4I-IsMBfjcGz8fkKNyVFUwJXOB4XTSths3tekIe8L0Jg1D-1ZeUKYSjc0eHy4nFvc5fEigbc1zI1soGECBX2fpqunJdOIUBYY7ysv6TsH=w1920-h1080"></object>
+              <object
+                data="https://lh3.googleusercontent.com/pw/AP1GczN5SEotuzyCDDnSZWrOYIJU5bkUb7_PKS3NBWbKCSpnOYEkLlM6O2Oq0gasVAzgDFObGbd-aVCXVlvvxXI3Ei-WWohDwZGIjBC1Jj6DYykjqXOKtpob=w1920-h1080"></object>
+              <object
+                data="https://lh3.googleusercontent.com/pw/AP1GczPUP62pzb4Xh7zWI8zdoSaZ4Bv8QqENrcJN3IRf5o8kNa235uAsDps5E7JlMQ33BiBd-TPTasjxHnQvIEBWGTRhExmYGXmBHs_bePyrK-H_r7fiVRCv=w1920-h1080"></object>
+              <object
+                data="https://lh3.googleusercontent.com/pw/AP1GczPzk42w8wJhcGMnCvnCjnodwuxvqXSrIpY--7ef786CsF7dsUxNZrsJI9fxdYVQbJwvg8R3cGVq3ObYZvzKuMFyxw4hxU6a8XuK8RUODMoBWvUqkbBX=w1920-h1080"></object>
+              <object
+                data="https://lh3.googleusercontent.com/pw/AP1GczPT3XvW70BWOvn35zKwGnaScsIm5kADLo8X7mYCVYvqvU0ZBGz38mMsPNHOYOL3S0RKe0JC03Y-C8kgaAxEKYPRmAacVL9DA6NkEzj0JeZZ4Rr3YLWM=w1920-h1080"></object>
+              <object
+                data="https://lh3.googleusercontent.com/pw/AP1GczP2IDP3gCMKeWqJpZnXJ1pr4QpQRAWGecfdGSZkDZfA_d1SmKV9oAG9jZvqwydhXJ-Ntxlbkmspd_0UxBBGglzcxdEiTS9DagNnMfOzDRcVw835XWZ1=w1920-h1080"></object>
+              <object
+                data="https://lh3.googleusercontent.com/pw/AP1GczPz3Zi_g2qjy_3b7_jUjP-F11M70CXJLLI3gd_oifltWDG60h0Uk2L7XA6Ug9oDT0Ie8s7XV727oDxz1x-nYht_8tBs4rLbrNfVeaX1DvtZasTdKWHn=w1920-h1080"></object>
+              <object
+                data="https://lh3.googleusercontent.com/pw/AP1GczP6gI67f9GOagNhZvrv4Wlaoqv_awNN6Y-vDgNb33r_bTlNX9wPCC33XY8jucpsBI1JMY1fEzg3eLXFxUR-TiuxA556ouwtmfXjPUVeLfHkQ4zOzC2Z=w1920-h1080"></object>
+              <object
+                data="https://lh3.googleusercontent.com/pw/AP1GczNsk-9JU2QeWcc9o7StIKtKNeVzhfF1lmu4wFYHW0LuosMa8VkaYN_2ecwUlRhaWd30sey5MLv3grDDOd6nlg2Qug8U8D-ELlUFD1kFfUmaOY4WEKGB=w1920-h1080"></object>
+              <object
+                data="https://lh3.googleusercontent.com/pw/AP1GczNvx77WL8ILG17q-0YGve4QpZUkX9Nr0gh2xtbrzmvhMwkmCpNRBUz5XEH1kII1PvrYA76griK-6ybMNYjSeLtX5srumR4SZraVWaZVHW3Z_bbwtpHW=w1920-h1080"></object>
+              <object
+                data="https://lh3.googleusercontent.com/pw/AP1GczNBqkcaydvufbM4isG-vjHZar6WGr59yDHJkBgltQ31valtgNeHcHHl8_wHIXyQYdHkuf8bmx0G4ziGChPFrwXA-8gAtSkppfYad1naz7sdP7ZAj0VE=w1920-h1080"></object>
+              <object
+                data="https://lh3.googleusercontent.com/pw/AP1GczOoDvYHgxsQugiInJ3_Ds8Z-GkAEusXsSRI8H_Muz37j1XDOMTuXppHHnYxq1C7AJRmFW7_VZO66PuNGkR1zQmK5Vetm8Kh9z9guoOkgHJwKa0wv01Q=w1920-h1080"></object>
+              <object
+                data="https://lh3.googleusercontent.com/pw/AP1GczP5DKUm5tBKLRRZdPQPg0W1W33W8BlGIr-qiaTn2ZTfeQDwPIohgLj6Lbp_7iF3fOVLDKSQO6wgzA6Cr8iwtu5BJtWZmnBw1l6_pVBwQLbjHHHgpPL-=w1920-h1080"></object>
+              <object
+                data="https://lh3.googleusercontent.com/pw/AP1GczNoXSeWaJbCGL0_9nHFMCADs37-cUrCDq-rH3SSfpkZSGI0042LDCgZ-3zZYJhRZJr1ZeXPmMg-75j0WzUPR60-A07ZywIfa78TKcDhETmO4X0i6qrf=w1920-h1080"></object>
+              <object
+                data="https://lh3.googleusercontent.com/pw/AP1GczOZo_B8K5os9RACIaknmQ_TEoAY8-QF4mp64f9oHOdDvrRC0eGQMUcghOaVZrAhnbjrvvm7_BuUTHWeUtMYOyNtMY7MPwZklD5OKJw_KTUSW-kutI4F=w1920-h1080"></object>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Vendor JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+  <!-- Theme & AOS init -->
+  <script>
+    AOS.init({ once: true, duration: 600 });
+
+    const root = document.documentElement;
+    const themeIcon = document.getElementById('theme-icon');
+    const saved = localStorage.getItem('theme');
+    const prefers = window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+    function setTheme(t) {
+      root.setAttribute('data-bs-theme', t);
+      localStorage.setItem('theme', t);
+      themeIcon.textContent = t === 'dark' ? '🌞' : '🌙';
+    }
+    setTheme(saved || (prefers ? 'dark' : 'light'));
+
+    document.getElementById('toggle-theme').addEventListener('click', () => {
+      setTheme(root.getAttribute('data-bs-theme') === 'dark' ? 'light' : 'dark');
+    });
+  </script>
 </body>
 
 </html>
