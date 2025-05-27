@@ -50,12 +50,69 @@
     box-shadow: 0 0 1rem rgba(0, 0, 0, .12);
 }
 
-/* profile pic sizing */
+
+/* Ensure all project card images have consistent sizing and cropping */
+.card-img-top {
+    width: 100%;
+    height: 200px;
+    /* Adjust this fixed height as needed for your design */
+    object-fit: cover;
+    /* This scales the image to cover the container, cropping if needed */
+    object-position: center;
+    /* Centers the image within the container */
+}
+
+/* Optional: Adjust height for smaller screens if needed */
+@media (max-width: 768px) {
+    .card-img-top {
+        height: 150px;
+        /* Smaller height for mobile devices */
+    }
+}
+
+/* Header Divider Line */
+.header-divider {
+    width: 100%;
+    /* Take full width of its container (col-lg-9) */
+    max-width: 400px;
+    /* Limit max width for a cleaner look on very wide screens */
+    height: 2px;
+    /* Thickness of the line */
+    background-color: var(--accent-1);
+    /* Uses your primary accent color */
+    border-radius: 9999px;
+    /* Makes the line ends rounded */
+    /* The mx-auto and my-4 Bootstrap classes handle margin */
+}
+
+/* Profile Image Sizing Adjustments */
 .profile-img {
-    max-width: 30vw;
-    /* scales with viewport */
-    min-width: 10rem;
-    /* ensures legibility */
+    /* Existing styles */
+    max-width: 20vw;
+    /* Smaller max-width on larger screens (e.g., desktop) */
+    min-width: 8rem;
+    /* Ensures it doesn't become too small */
     height: auto;
     transition: transform .2s;
+}
+
+/* Responsive adjustments for profile image */
+@media (max-width: 991.98px) {
+
+    /* For screens smaller than large desktops (e.g., tablets) */
+    .profile-img {
+        max-width: 30vw;
+        /* Allow it to be slightly larger */
+        min-width: 10rem;
+    }
+}
+
+@media (max-width: 767.98px) {
+
+    /* For mobile devices */
+    .profile-img {
+        max-width: 50vw;
+        /* Allow it to be even larger for better visibility on small screens */
+        min-width: 12rem;
+    }
 }

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="530.92914"
+   height="199.99998"
+   viewBox="0 0 140.47501 52.916665"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.4.2 (f4327f4, 2025-05-13)"
+   sodipodi:docname="LipidLensLogoUpdated.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0"
+     inkscape:showpageshadow="false"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="false"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     showguides="true"
+     inkscape:zoom="1.4378367"
+     inkscape:cx="210.03776"
+     inkscape:cy="197.8667"
+     inkscape:window-width="1920"
+     inkscape:window-height="1009"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1"
+     showborder="false"
+     borderlayer="false" />
+  <defs
+     id="defs1" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(36.489521,9.9638188)">
+    <g
+       id="g4"
+       transform="translate(-1.1040893,0.27602174)">
+      <path
+         style="fill:none;fill-opacity:1;stroke:#3a66ff;stroke-width:2.5527;stroke-dasharray:none;stroke-opacity:1;paint-order:normal"
+         d="M 104.00179,14.871106 88.561819,38.729969 73.121848,14.871106 57.681878,38.729969 42.241911,14.871106 26.801953,38.729969 11.361978,14.871106 -4.0779919,38.729969 -19.517954,14.871106 -17.278553,-8.9877618 m -2.239401,23.8588678 -15.439982,4.771769 m 16.983969,-0.954356 -16.983969,5.726128"
+         id="path1"
+         sodipodi:nodetypes="cccccccccccc" />
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:22.5778px;line-height:5.33334px;font-family:'Times New Roman';-inkscape-font-specification:'Times New Roman, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#3e69ff;fill-opacity:1;stroke:#3a66ff;stroke-width:0.264999;stroke-opacity:1;paint-order:normal"
+         x="0.88056797"
+         y="6.853857"
+         id="text2"><tspan
+           sodipodi:role="line"
+           id="tspan2"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:22.5778px;line-height:5.33334px;font-family:'Times New Roman';-inkscape-font-specification:'Times New Roman, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#3e69ff;fill-opacity:1;stroke-width:0.265"
+           x="0.88056797"
+           y="6.853857">Lipid Lens</tspan></text>
+    </g>
+  </g>
+</svg>
